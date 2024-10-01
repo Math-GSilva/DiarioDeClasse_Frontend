@@ -1,0 +1,1 @@
+# DiarioDeClasse_Frontend
