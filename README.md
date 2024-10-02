@@ -62,12 +62,12 @@ Mateus Akira de Oliveira Muranaka
 **UC 1: Cadastro de Usuário (ADM)**
 
 - **Como** administrador, **quero** cadastrar novos professores fornecendo informações como e-mail e senha, **para que** eles possam acessar o sistema.
- - **Critérios de Aceitação:**
-  - O ADM deve inserir e-mail e senha do professor.
-  - A conta deve ser criada com sucesso.
- - **Definition of Done:**
-  - A funcionalidade de cadastro de professores está implementada.
-  - Testes de criação e validação de conta concluídos.
+  - **Critérios de Aceitação:**
+    - O ADM deve inserir e-mail e senha do professor.
+    - A conta deve ser criada com sucesso.
+  - **Definition of Done:**
+    - A funcionalidade de cadastro de professores está implementada.
+    - Testes de criação e validação de conta concluídos.
 
 **UC 2:** Login de Usuário
 
@@ -81,11 +81,11 @@ Mateus Akira de Oliveira Muranaka
 **UC 3: Criação de Turmas (ADM)**
 
 - **Como** administrador, **quero** criar novas turmas atribuindo um nome, código e professor responsável, **para que** as turmas possam ser organizadas no sistema.
- - **Critérios de Aceitação:**
-  - O ADM deve inserir o nome, código e selecionar um professor para a turma.
-  - A turma deve ser criada com sucesso e exibida na lista de turmas.
- - **Definition of Done:**
-  -Funcionalidade de criação de turmas implementada e testada.
+  - **Critérios de Aceitação:**
+    - O ADM deve inserir o nome, código e selecionar um professor para a turma.
+    - A turma deve ser criada com sucesso e exibida na lista de turmas.
+  - **Definition of Done:**
+    -Funcionalidade de criação de turmas implementada e testada.
 
 **UC 4:** Edição de Turmas (ADM)
 
