@@ -78,7 +78,7 @@ Mateus Akira de Oliveira Muranaka
  - **Definition of Done:**
   -Função de login implementada e testada para ADM e professores.
 
-**UC 3:** Criação de Turmas (ADM)
+**UC 3: Criação de Turmas (ADM)**
 
 - **Como** administrador, **quero** criar novas turmas atribuindo um nome, código e professor responsável, **para que** as turmas possam ser organizadas no sistema.
  - **Critérios de Aceitação:**
@@ -96,7 +96,7 @@ Mateus Akira de Oliveira Muranaka
  - **Definition of Done:**
   - Funcionalidade de edição de turmas implementada e testada.
 
-**UC 5:** Exclusão ou Arquivamento de Turmas (ADM)
+**UC 5: Exclusão ou Arquivamento de Turmas (ADM)**
   
 - **Como** administrador, **quero** excluir ou arquivar turmas que não são mais necessárias, **para que** eu possa manter o sistema organizado.
  - **Critérios de Aceitação:**
@@ -105,7 +105,7 @@ Mateus Akira de Oliveira Muranaka
  - **Definition of Done:**
   - Funcionalidade de exclusão/arquivamento de turmas implementada e testada.
 
-**UC 6:** Visualização de Turmas (Professor)
+**UC 6: Visualização de Turmas (Professor)**
   
 - **Como** professor, **quero** visualizar as turmas nas quais estou cadastrado, **para que** eu possa ver as listas de alunos e outros detalhes.
  - **Critérios de Aceitação:**
@@ -113,7 +113,7 @@ Mateus Akira de Oliveira Muranaka
  - **Definition of Done:**
   - Funcionalidade de visualização de turmas para professores implementada e testada.
 
-**UC 7:** Cadastro de Alunos (ADM)
+**UC 7: Cadastro de Alunos (ADM)**
   
 - **Como** administrador, **quero** cadastrar novos alunos em turmas, fornecendo informações como nome, e-mail, data de nascimento e código de matrícula, **para que** os alunos possam ser registrados no sistema.
  - **Critérios de Aceitação:**
@@ -122,7 +122,7 @@ Mateus Akira de Oliveira Muranaka
  - **Definition of Done:**
   - Funcionalidade de cadastro de alunos implementada e testada.
 
-**UC 8:** Edição de Alunos (ADM)
+**UC 8: Edição de Alunos (ADM)**
   
 - **Como** administrador, **quero** editar os dados dos alunos, **para que** eu possa corrigir ou atualizar as informações conforme necessário.
  - **Critérios de Aceitação:**
@@ -131,7 +131,7 @@ Mateus Akira de Oliveira Muranaka
  - **Definition of Done:**
   - Funcionalidade de edição de alunos implementada e testada.
 
-**UC 9:** Exclusão de Alunos (ADM)
+**UC 9: Exclusão de Alunos (ADM)**
   
 - **Como** administrador, **quero** remover alunos de turmas, **para que** eu possa gerenciar a lista de alunos conforme necessário.
  - **Critérios de Aceitação:**
@@ -140,7 +140,7 @@ Mateus Akira de Oliveira Muranaka
  - **Definition of Done:**
   - Funcionalidade de exclusão de alunos implementada e testada.
 
-**UC 10:** Visualização de Alunos (Professor)
+**UC 10: Visualização de Alunos (Professor)**
   
 - **Como** professor, **quero** visualizar a lista de alunos da minha turma, **para que** eu possa ver suas informações básicas.
  - **Critérios de Aceitação:**
@@ -148,7 +148,7 @@ Mateus Akira de Oliveira Muranaka
  - **Definition of Done:**
   -Funcionalidade de visualização de alunos implementada e testada.
 
-**UC 11:** Registro de Presença (Professor)
+**UC 11: Registro de Presença (Professor)**
 
 - **Como** professor, **quero** registrar a presença dos alunos, **para que** eu possa acompanhar a assiduidade de cada um.
  - **Critérios de Aceitação:**
@@ -157,7 +157,7 @@ Mateus Akira de Oliveira Muranaka
  - **Definition of Done:**
   - Funcionalidade de registro de presença implementada e testada.
 
-**UC 12:** Visualização de Registro de Presença (Professor)
+**UC 12: Visualização de Registro de Presença (Professor)**
 
 - **Como** professor, **quero** visualizar o histórico de presença de cada aluno, **para que** eu possa acompanhar seu desempenho.
  - **Critérios de Aceitação:**
@@ -165,7 +165,7 @@ Mateus Akira de Oliveira Muranaka
  - **Definition of Done:**
   - Funcionalidade de visualização de presença implementada e testada.
 
-**UC 13:** Inserção de Notas (Professor)
+**UC 13: Inserção de Notas (Professor)**
 
 - **Como** professor, **quero** registrar as notas de avaliações e atividades dos alunos, **para que** eu possa registrar seu desempenho acadêmico.
  - **Critérios de Aceitação:**
@@ -174,7 +174,7 @@ Mateus Akira de Oliveira Muranaka
  - **Definition of Done:**
   - Funcionalidade de inserção de notas implementada e testada.
 
-**UC 14:** Visualização de Notas (Professor)
+**UC 14: Visualização de Notas (Professor)**
 
 - **Como** professor, **quero** visualizar as notas dos meus alunos, **para que** eu possa acompanhar o progresso acadêmico.
  - **Critérios de Aceitação:**
