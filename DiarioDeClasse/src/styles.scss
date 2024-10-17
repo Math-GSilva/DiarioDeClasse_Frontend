@@ -1,0 +1,21 @@
+/* You can add global styles to this file, and also import other style files */
+body {
+    background-color: #2a2636;
+    margin: 0;
+}
+
+.align-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 100vh;
+}
+
+* {
+    font-family: "Poppins";
+}
+
+p, h1, label {
+    color: #FFFFFF;
+}
