@@ -12,10 +12,19 @@ body {
     height: 100vh;
 }
 
-* {
-    font-family: "Poppins";
+p {
+    font-family: "Hind", sans-serif;
 }
 
-p, h1, label {
-    color: #FFFFFF;
+h1 {
+    font-family: "Montserrat", serif;
+    font-weight: 900;
+
+    margin: 0;
+
+    color: #2D3142;
+}
+
+label {
+    font-family: "Roboto", sans-serif;
 }

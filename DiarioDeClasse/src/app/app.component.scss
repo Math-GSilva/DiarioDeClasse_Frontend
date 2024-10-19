@@ -1,24 +1,23 @@
 .main-card {
-    background-color: #433b5c;
+    background-color: #FFFFFF;
 
     margin: 0;
-    width: 76vw;
-    height: 96vh;
+    width: 99vw;
+    height: 98vh;
 
-    border-radius: 3vh;
+    border-radius: 1vh;
 }
 
 .input-style {
-    padding: 1vh;
+    padding: 2vh;
 
-    width: 65%;
+    border: 1px;
+    border-color: #C1C7CD;
 
-    border: 0;
-    border-radius: 1vh;
+    background-color: #F2F4F8;
+    box-shadow: 0 0.5vh 0.8vh #9c9c9c;
 
-    background-color: #2a2636;
-
-    color: #FFFFFF;
+    color: #cecece;
     font-size: 2.4vh;
 }
 
@@ -30,11 +29,13 @@
 .button-style {
     font-size: 3vh;
 
+    color: #FFFFFF;
+    background-color: #2D3142;
+
     padding-left:   3vw;
     padding-right:  3vw;
     padding-top:    2vh;
     padding-bottom: 2vh;
 
     border: 0;
-    border-radius: 1vh;
 }
