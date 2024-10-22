@@ -17,12 +17,16 @@
     background-color: #F2F4F8;
     box-shadow: 0 0.5vh 0.8vh #9c9c9c;
 
-    color: #cecece;
     font-size: 2.4vh;
 }
 
+.input-style::placeholder {
+    color: #697077;
+    font-style: italic;
+}
+
 .input-style:focus {
-    background-color: #322d41;
+    background-color: #d7dbe2;
     outline: 0;
 }
 
@@ -38,4 +42,16 @@
     padding-bottom: 2vh;
 
     border: 0;
+
+    transition: 0.3s;
+}
+
+.button-style:hover {
+    background-color: #383d52;
+
+    cursor: pointer;
+}
+
+.button-style:active {
+    background-color: #5b6388;
 }
