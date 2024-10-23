@@ -15,6 +15,8 @@ export class LoginPageComponent {
   authService = inject(AuthService);
   router = inject(Router);
 
+  hide_password: boolean = true;
+
   protected loginForm = new FormGroup({
     Username: new FormControl('', [Validators.required, Validators.email]),
     Password: new FormControl('', [Validators.required])
@@ -31,5 +33,9 @@ export class LoginPageComponent {
         console.log(data);
       });
     }
+  }
+
+  toggleShowPassword(){
+    this.hide_password = !this.hide_password;
   }
 }

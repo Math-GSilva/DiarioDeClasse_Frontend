@@ -71,6 +71,10 @@ label {
 
 .input-style {
     width: 94%;
+}
+
+.input-wrapper{
+    position: relative;
     margin-top: 2vh;
 }
 
@@ -82,4 +86,20 @@ label {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.toggle-button{
+    position: absolute;
+    right: calc(6% - 4vh + 1.4vh) ;
+    top: 1.7vh;
+
+    cursor: pointer;
+
+    border: 0;
+    background-color: transparent;
+}
+
+.toggle-button-icon{
+    font-size: 3.2vh;
+    color: #697077;
 }

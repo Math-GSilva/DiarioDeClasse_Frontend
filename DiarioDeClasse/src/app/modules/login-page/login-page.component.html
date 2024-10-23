@@ -9,11 +9,18 @@
             </div>
             <div class="grid-item itemB1">
                 <label>Email: </label><br>
-                <input class="input-style" name="email" type="email" formControlName="Username" placeholder="email@email.com.br">
+                <div class="input-wrapper">   
+                    <input class="input-style" name="email" type="email" formControlName="Username" placeholder="email@email.com.br">
+                </div>
             </div>
             <div class="grid-item itemC1">
                 <label>Senha: </label><br>
-                <input class="input-style" type="password" formControlName="Password" placeholder="************">
+                <div class="input-wrapper">   
+                    <button class="toggle-button" (click)="toggleShowPassword()">
+                        <i class="toggle-button-icon material-icons">{{ hide_password ? 'visibility' : 'visibility_off' }}</i>
+                    </button>
+                    <input class="input-style" [type]="hide_password ? 'password' : 'text'" formControlName="Password" [placeholder]="hide_password ? '●●●●●●●●●●●' : 'my_password'">
+                </div>
             </div>
             <div class="grid-item itemD1">
                 <button class="button-style comp-spacer-down1" type="submit">Entrar</button>

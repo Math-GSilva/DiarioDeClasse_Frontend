@@ -1,7 +1,7 @@
-import { Injectable } from '@angular/core';
+import { Injectable, inject, PLATFORM_ID, Inject  } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { inject } from '@angular/core';
 import { tap } from 'rxjs/operators';
+import { isPlatformBrowser } from '@angular/common';
 
 @Injectable({
   providedIn: 'root'
@@ -10,7 +10,7 @@ export class AuthService {
   httpClient = inject(HttpClient);
   baseUrl = 'http://localhost:5193';
 
-  constructor() { }
+  constructor(@Inject(PLATFORM_ID) private platformId: Object) {}
 
   login(data: any) {
     return this.httpClient.post(`${this.baseUrl}/api/auth/login`, data)
@@ -24,6 +24,9 @@ export class AuthService {
   }
 
   isLoggedIn() {
-    return localStorage.getItem('authUser') !== null;
+    if (isPlatformBrowser(this.platformId)) {
+      return !!localStorage.getItem('token');
+    }
+    return false;
   }
 }
