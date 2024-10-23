@@ -25,7 +25,7 @@ export class AuthService {
 
   isLoggedIn() {
     if (isPlatformBrowser(this.platformId)) {
-      return !!localStorage.getItem('token');
+      return localStorage.getItem('authUser') !== null;
     }
     return false;
   }
