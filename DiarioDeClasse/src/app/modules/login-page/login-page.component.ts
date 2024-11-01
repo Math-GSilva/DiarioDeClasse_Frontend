@@ -28,8 +28,7 @@ export class LoginPageComponent {
       this.authService.login(this.loginForm.value)
       .subscribe((data: any) => {
         if(this.authService.isLoggedIn()){
-          console.log("login succedido!")
-          this.router.navigate(['/test']);
+          this.router.navigate(['/home']);
         }
         console.log(data);
       });

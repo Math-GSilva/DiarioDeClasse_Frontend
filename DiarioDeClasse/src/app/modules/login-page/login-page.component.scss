@@ -71,6 +71,7 @@ label {
 
 .input-style {
     width: 94%;
+    padding-right: 8%;
 }
 
 .input-wrapper{
@@ -90,7 +91,7 @@ label {
 
 .toggle-button{
     position: absolute;
-    right: calc(6% - 4vh + 1.4vh) ;
+    right: calc(0.5% - 4vh + 1.4vh) ;
     top: 1.7vh;
 
     cursor: pointer;
