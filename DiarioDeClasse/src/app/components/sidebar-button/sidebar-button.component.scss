@@ -1,0 +1,48 @@
+.page-button{
+    color: #21272A;
+    height: 6.5vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+
+    border-style: solid;
+    border-color: transparent;
+    border-width: 0vh;
+    border-top-width: 0.5vh;
+    border-top-color: #ffffff;
+    border-radius: 0;
+
+    transition: 0.2s;
+}
+
+.page-button:hover{
+    cursor: pointer;
+
+    border-style: solid;
+    border-bottom-color: #bcbcc2;
+    border-bottom-width: 0.5vh;
+    border-top-width: 0vh;
+}
+
+.page-button:active{
+
+    border-bottom-width: 0.1vh;
+    border-top-width: 0.4vh;
+
+    transition: 0.02s;
+}
+
+.page-button-icon{
+    margin: 0.3vw;
+    margin-top: auto;
+    margin-bottom: auto;
+    font-size: 3.3vh;
+}
+
+.page-button-text{
+    font-size: 2vh;
+    font-weight: 600;
+    padding-top: 0.4vh;
+    margin-top: auto;
+    margin-bottom: auto;
+}

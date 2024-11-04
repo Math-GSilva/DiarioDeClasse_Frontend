@@ -1,10 +1,15 @@
 import { Routes } from '@angular/router';
 import { authGuard } from './services/auth/auth.guard';
+import { userGuard } from './services/auth/user.guard';
 
 export const routes: Routes = [
-    {'path': '', 
-    loadChildren: () => import('./modules/login-page/login-page.module').then(m => m.LoginPageModule)},
+    {'path': 'login', 
+    loadChildren: () => import('./modules/login-page/login-page.module').then(m => m.LoginPageModule),
+    canActivate: [userGuard]},
     {'path': 'test', 
     loadChildren: () => import('./modules/test-page/test-page.module').then(m => m.TestPageModule),
     canActivate: [authGuard]},
+    {'path': 'home', 
+    loadChildren: () => import('./modules/home-page/home-page.module').then(m => m.HomePageModule)},
+    {'path': '', redirectTo: 'login', pathMatch: 'full'},
 ];

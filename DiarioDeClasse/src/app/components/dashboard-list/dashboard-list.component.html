@@ -1,0 +1,15 @@
+<div class="dashboard-list-card">
+    <div class="flex-row">
+        <p class="dashboard-list-title">{{ titleText }}</p>
+        <button class="dashboard-list-showall">
+            <p>Mostrar Todos</p>
+        </button>
+    </div>
+    <div class="flex-column">
+        @for (listable of listables; track $index){
+            <button class="dashboard-list-listable">
+                <p class="listable-text">⬤ {{ listable.display }}</p>
+            </button>
+        }
+    </div>
+</div>

@@ -1,0 +1,28 @@
+<div class="grid-container">
+    <div class="grid-item itemA1">
+        <!-- Título -->
+        <div class="comp-spacer-up1">
+            <img class="pin-image inline-block" src="../../../assets/images/pinswshadow.png">
+            <h1 class="side-title inline-block">DIÁRIO DE CLASSE</h1>
+        </div>
+        <!-- Barra de Pesquisa -->
+        <form (ngSubmit)="onSubmit()">
+            <div class="input-wrapper">   
+                <button class="submit-style" type="submit">
+                    <i class="search-icon material-symbols-outlined">search</i>
+                </button>
+                <input class="input-style" type="search" formControlName="Search" placeholder="Search for...">
+            </div>
+        </form>
+        <!-- Botões -->
+        <div class="page-buttons">
+            <app-sidebar-button buttonText="Dashboard"   buttonIcon="home"         [backgroundColor]="isActive('Dashboard')   ? '#F2F4F8' : '#FFFFFF'"/>
+            <app-sidebar-button buttonText="Professores" buttonIcon="folder_copy"  [backgroundColor]="isActive('Professores') ? '#F2F4F8' : '#FFFFFF'"/>
+            <app-sidebar-button buttonText="Turmas"      buttonIcon="bookmarks"    [backgroundColor]="isActive('Turmas')      ? '#F2F4F8' : '#FFFFFF'"/>
+            <app-sidebar-button buttonText="Alunos"      buttonIcon="group"        [backgroundColor]="isActive('Alunos')      ? '#F2F4F8' : '#FFFFFF'"/>
+        </div>
+    </div>
+    <div class="grid-item itemA2">
+        <ng-content></ng-content>
+    </div>
+</div>
