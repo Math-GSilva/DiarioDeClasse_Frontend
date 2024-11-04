@@ -1,5 +1,32 @@
 <div class="full-card">
     <app-sidebar [activeButton]="'Dashboard'">
-        <p>TESTE</p>
+        <div class="grid-container">
+            <div class="grid-item itemA1A2">
+                <h2>DASHBOARD</h2>
+            </div>
+            <div class="grid-item itemB1">
+                <app-dashboard-list titleText="Professores"/>
+            </div>
+            <div class="grid-item itemB2">
+                <app-dashboard-list titleText="Turmas"/>
+            </div>
+            <div class="grid-item itemC1C2">
+                <app-dashboard-list titleText="Alunos"/>
+            </div>
+        </div>
     </app-sidebar>
 </div>
+
+<!-- <app-sidebar [activeButton]="'Professores'">
+    <div class="grid-container">
+        <div class="grid-item itemA1">
+            <h1>PROFESSORES</h1>
+        </div>
+        <div class="grid-item itemA2">
+        </div>
+        <div class="grid-item itemB1B2">
+        </div>
+        <div class="grid-item itemC1C2">
+        </div>
+    </div>
+</app-sidebar> -->

@@ -1,1 +1,44 @@
 @import url("../../../app.component.scss");
+
+/* * * * * * * * *\
+    Grid  Start
+\* * * * * * * * */
+
+.grid-container {
+    display: grid;
+    gap: 3.5vh;
+    margin: auto;
+    width: 90%;
+    height: 85%;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 9% auto 41.5%;
+}
+  
+.grid-item {
+    padding: 0vh;
+}
+
+//Título
+.itemA1A2 {
+    grid-column: 1 / span 2;
+    grid-row: 1;
+}
+//Pesquisa
+.itemB1 {
+    grid-column: 1;
+    grid-row: 2;
+}
+//Resultado
+.itemB2 {
+    grid-column: 2;
+    grid-row: 2;
+}
+//Páginas
+.itemC1C2 {
+    grid-column: 1 / span 2;
+    grid-row: 3;
+}
+
+/* * * * * * * * *\
+     Grid  End
+\* * * * * * * * */

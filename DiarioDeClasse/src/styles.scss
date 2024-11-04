@@ -25,6 +25,29 @@ h1 {
     color: #2D3142;
 }
 
+h2 {
+    font-family: "Montserrat", serif;
+    font-weight: 800;
+
+    font-size: 4.5vh;
+
+    margin: 0;
+
+    color: #21272A;
+    text-shadow: 0 0.5vh 0.5vh #C0C0C0;
+}
+
 label {
     font-family: "Roboto", sans-serif;
+}
+
+
+.flex-row{
+    display: flex;
+    flex-direction: row;
+}
+
+.flex-column{
+    display: flex;
+    flex-direction: column;
 }
