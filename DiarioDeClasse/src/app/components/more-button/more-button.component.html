@@ -1,0 +1,11 @@
+<div class="dropdown">
+    <button class="more-button-style" (click)="onClick()">
+        <i class="more-icon material-symbols-outlined">more_horiz</i>
+    </button>
+    <div class="dropdown-content" [class.visible]="show_more">
+        <div class="flex-column">
+            <button class="dropdown-button-style">Editar</button>
+            <button class="dropdown-button-style">Excluir</button>
+        </div>
+    </div>
+</div>

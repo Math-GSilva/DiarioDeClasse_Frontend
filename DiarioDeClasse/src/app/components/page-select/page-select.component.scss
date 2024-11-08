@@ -1,0 +1,58 @@
+.pages-button{
+    font-size: 2vh;
+    font-weight: 500;
+    color: #697077;
+
+    background-color: transparent;
+    border-style: none;
+
+    transition: 0.2s;
+
+    &:hover{
+        cursor: pointer;
+        color: #EF8354;
+    }
+
+    &:active{
+        color: #ffb190;
+    }
+}
+
+.current-button{
+    color: #EF8354;
+}
+
+.prev-icon{
+    margin-left: auto;
+}
+
+.next-icon{
+    margin-right: auto;
+}
+
+p{
+    user-select: none;
+
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.spaced-text{
+    padding-left: 0.5vw;
+    padding-right: 0.5vw;
+}
+
+.prev-unspace{
+    padding-left: 0vw;
+}
+
+.next-unspace{
+    padding-right: 0vw;
+}
+
+.ellipsis{
+    color: #EF8354;
+
+    font-weight: 1000;
+    letter-spacing: 0.1vw;
+}
