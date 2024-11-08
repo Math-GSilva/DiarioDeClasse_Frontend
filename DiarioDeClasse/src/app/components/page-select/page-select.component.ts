@@ -8,7 +8,7 @@ import { Component, Input } from '@angular/core';
   styleUrl: './page-select.component.scss'
 })
 export class PageSelectComponent {
-  @Input() first_page: string = '1';
-  @Input() current_page: string = '1';
-  @Input() last_page: string = '12';
+  @Input() first_page: number = 1;
+  @Input() current_page: number = 2;
+  @Input() last_page: number = 12;
 }

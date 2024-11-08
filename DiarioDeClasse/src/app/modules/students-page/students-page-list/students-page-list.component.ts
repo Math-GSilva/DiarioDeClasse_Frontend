@@ -13,6 +13,8 @@ import { MOCK_STUDENTS_LISTABLE } from '../../../interfaces/mocks/mock-students-
 })
 export class StudentsPageListComponent {
   alunos_list = this.generateList();
+  total_pages = 13;
+  current_page = 1;
 
   generateList(){
     let list = [];
