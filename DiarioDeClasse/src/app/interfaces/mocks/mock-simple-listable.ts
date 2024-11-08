@@ -1,6 +1,6 @@
-import { SipleListable } from "../simple-listable";
+import { SimpleListable } from "../simple-listable";
 
-export const MOCK_SIMPLE_LISTABLE: SipleListable[] = [
+export const MOCK_SIMPLE_LISTABLE: SimpleListable[] = [
     {
         id: 1,
         display: "Heavy",

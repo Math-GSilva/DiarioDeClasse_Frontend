@@ -11,5 +11,9 @@ export const routes: Routes = [
     canActivate: [authGuard]},
     {'path': 'home', 
     loadChildren: () => import('./modules/home-page/home-page.module').then(m => m.HomePageModule)},
+    {'path': 'teachers', 
+    loadChildren: () => import('./modules/teachers-page/teachers-page.module').then(m => m.TeachersPageModule)},
+    {'path': 'students', 
+    loadChildren: () => import('./modules/students-page/students-page.module').then(m => m.StudentsPageModule)},
     {'path': '', redirectTo: 'login', pathMatch: 'full'},
 ];

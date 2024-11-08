@@ -1,5 +1,4 @@
 import { Component, Input } from '@angular/core';
-import { MOCK_SIMPLE_LISTABLE } from '../../interfaces/mocks/mock-simple-listable';
 
 @Component({
   selector: 'app-dashboard-list',
@@ -10,6 +9,9 @@ import { MOCK_SIMPLE_LISTABLE } from '../../interfaces/mocks/mock-simple-listabl
 })
 export class DashboardListComponent {
   @Input() titleText: string = 'Categoria';
+  @Input() listables: any[] = [];
 
-  listables = [...MOCK_SIMPLE_LISTABLE].slice(0,6);
+  get displayListables(): any[] {
+    return this.listables.slice(0, 6);
+  }
 }

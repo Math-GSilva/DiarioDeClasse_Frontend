@@ -1,0 +1,99 @@
+.header-row{
+    border-style: solid;
+    border-width: 0.25vh;
+    border-color: #DDE1E6;
+    background-color: #F2F4F8;
+
+    height: 5.5vh;
+}
+
+.header-text{
+    height: 2.9vh;
+    padding-left: 1vw;
+
+    color: #121619;
+
+    font-size: 1.9vh;
+    font-weight: 500;
+
+    user-select: none;
+    margin-top: 1.3vh;
+    margin-bottom: 1.3vh;
+}
+
+.listable-row-style{
+    background-color: #FFFFFF;
+
+    height: 6.5vh;
+    padding: 0%;
+
+    border-radius: 0%;
+    border-width: 0.25vh;
+    border-style: solid;
+    border-top-style: none;
+    border-color: #DDE1E6;
+}
+
+.listable-button-style{
+    background-color: #FFFFFF;
+
+    height: 6.5vh;
+    padding: 0%;
+
+    border-style: none;
+}
+
+.listable-text{
+    padding-left: 1vw;
+    color: #21272A;
+    width: min-content;
+    
+    font-size: 1.8vh;
+    text-align: left;
+}
+
+.special-text{
+    background-color: #F2F4F8;
+    font-size: 1.5vh;
+    font-weight: 500;
+
+    padding: 0.2vh;
+    padding-right: 0.8vw;
+    padding-left: 0.8vw;
+
+    border-radius: 2vh;
+
+    margin-left: 1vw;
+    margin-top: calc(1.7vh);
+    margin-bottom: calc(1.7vh);
+}
+
+.listable-image{
+    height: 80%;
+
+    margin-left: 0.5vw;
+    margin-top: 0.6vh;
+
+    border-radius: 50%;
+}
+
+//Nome
+.column-1{
+    width: 29%;
+}
+//Email
+.column-2{
+    width: 37%;
+}
+//Data Nasc.
+.column-3{
+    width: 15%;
+}
+//Único
+.column-4{
+    width: 15%;
+}
+//...
+.column-5{
+    width: 4%;
+}

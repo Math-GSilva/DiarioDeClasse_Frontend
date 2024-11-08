@@ -1,0 +1,24 @@
+<div class="flex-row">
+    <!-- Botão Anterior -->
+    <button class="pages-button prev-icon flex-row">
+        <i class="pages-icon material-symbols-outlined">arrow_back_ios</i>
+        <p class="spaced-text prev-unspace">Anterior</p>
+    </button>
+    <!-- Botão Primeira Aba -->
+    @if ( first_page != current_page ) {
+        <button class="pages-button spaced-text"><p>{{ first_page }}</p></button>
+        <p class="spaced-text ellipsis">...</p>
+    }
+    <!-- Botão Aba Atual -->
+    <button class="pages-button current-button spaced-text"><p>{{ current_page }}</p></button>
+    <!-- Botão Última Aba -->
+    @if ( last_page != current_page ) {
+        <p class="spaced-text ellipsis">...</p>
+        <button class="pages-button spaced-text"><p>{{ last_page }}</p></button>
+    }
+    <!-- Botão Próximo -->
+    <button class="pages-button next-icon flex-row">
+        <p class="spaced-text next-unspace">Próximo</p>
+        <i class="material-symbols-outlined">arrow_forward_ios</i>
+    </button>
+</div>

@@ -1,0 +1,18 @@
+<div class="full-card">
+    <app-sidebar [activeButton]="'Professores'">
+        <div class="grid-container">
+            <div class="grid-item itemA1">
+                <h2>PROFESSORES</h2>
+            </div>
+            <div class="grid-item itemA2">
+                <app-category-search/>
+            </div>
+            <div class="grid-item itemB1B2">
+                <app-people-list [unique_info]="'Turmas'" [listables]="professores_list"/>
+            </div>
+            <div class="grid-item itemC1C2">
+                <app-page-select/>
+            </div>
+        </div>
+    </app-sidebar>
+</div>

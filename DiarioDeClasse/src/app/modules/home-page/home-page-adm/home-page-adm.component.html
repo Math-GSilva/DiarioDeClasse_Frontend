@@ -5,28 +5,14 @@
                 <h2>DASHBOARD</h2>
             </div>
             <div class="grid-item itemB1">
-                <app-dashboard-list titleText="Professores"/>
+                <app-dashboard-list titleText="Professores" [listables]="profes_list"/>
             </div>
             <div class="grid-item itemB2">
-                <app-dashboard-list titleText="Turmas"/>
+                <app-dashboard-list titleText="Turmas" [listables]="turmas_list"/>
             </div>
             <div class="grid-item itemC1C2">
-                <app-dashboard-list titleText="Alunos"/>
+                <app-dashboard-list titleText="Alunos" [listables]="alunos_list"/>
             </div>
         </div>
     </app-sidebar>
 </div>
-
-<!-- <app-sidebar [activeButton]="'Professores'">
-    <div class="grid-container">
-        <div class="grid-item itemA1">
-            <h1>PROFESSORES</h1>
-        </div>
-        <div class="grid-item itemA2">
-        </div>
-        <div class="grid-item itemB1B2">
-        </div>
-        <div class="grid-item itemC1C2">
-        </div>
-    </div>
-</app-sidebar> -->

@@ -6,7 +6,7 @@
         </button>
     </div>
     <div class="flex-column">
-        @for (listable of listables; track $index){
+        @for (listable of displayListables; track $index){
             <button class="dashboard-list-listable">
                 <p class="listable-text">⬤ {{ listable.display }}</p>
             </button>
