@@ -18,8 +18,26 @@
     }
 }
 
-.current-button{
+.current-page{
     color: #EF8354;
+
+    font-family: "Hind", sans-serif;
+    font-size: 2vh;
+    font-weight: 500;
+
+    text-align: center;
+
+    width: 1vw;
+
+    background-color: transparent;
+    border-style: none;
+
+    &:focus{
+        color: #d36232;
+
+        background-color: #DDE1E6;
+        outline: 0;
+    }
 }
 
 .prev-icon{
