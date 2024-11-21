@@ -1,0 +1,16 @@
+<div class="grid-container">
+    <div class="grid-item itemA1">
+        <h3>Turmas</h3>
+    </div>
+    <div class="grid-item itemB1">
+        <input class="classes-input" value="" placeholder="Insira Codigo ou Nome da Turma">
+    </div>
+    <div class="grid-item itemC1">
+        @for ( lsitable of list; track $index ) {
+            <div class="flex-row list-item">
+                <p class="classes-text classes-name">{{ lsitable.name }}</p>
+                <p class="classes-text classes-number">{{ lsitable.number }}</p>
+            </div>
+        }
+    </div>
+</div>

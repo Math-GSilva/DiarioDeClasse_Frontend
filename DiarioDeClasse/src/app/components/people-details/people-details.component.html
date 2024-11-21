@@ -1,0 +1,32 @@
+<div class="grid-container">
+    <div class="grid-item itemA1A2">
+        <h3>Detalhes do Usuário</h3>
+    </div>
+    <div class="grid-item itemB1 flex-column">
+        <label>Nome</label>
+        <input class="input-style" type="text" [value]="info.name" [disabled]="!enable">
+    </div>
+    <div class="grid-item itemB2 flex-column">
+        <label>Sobrenome</label>
+        <input class="input-style" type="text" [value]="info.surname" [disabled]="!enable">
+    </div>
+    <div class="grid-item itemC1 flex-column">
+        <label>Data de Nascimento</label>
+        <input class="input-style" type="text" [value]="info.birthdate | date:'dd/MM/yyyy'" [disabled]="!enable">
+    </div>
+    <div class="grid-item itemD1D2 flex-column">
+        <label>E-mail</label>
+        <input class="input-style" type="email" [value]="info.email" [disabled]="!enable">
+    </div>
+    <div class="grid-item itemE1E2 flex-column">
+        <label>{{ unique_info }}</label>
+        <div class="input-wrapper flex-column">
+            @if ( enable && unique_info == 'Senha' ) {
+                <button class="toggle-button" (click)="toggleShowPassword()"> 
+                    <i class="toggle-button-icon material-symbols-outlined">{{ hide_password ? 'visibility' : 'visibility_off' }}</i>
+                </button>
+            }
+            <input class="input-style" [type]="hide_password ? 'password' : 'text'" [value]="isTeacher(info) ? info.password : info.registry"  [disabled]="!enable">
+        </div>
+    </div>
+</div>

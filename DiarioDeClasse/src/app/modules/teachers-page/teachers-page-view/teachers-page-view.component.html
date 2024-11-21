@@ -1,0 +1,28 @@
+<div class="full-card">
+    <app-sidebar [activeButton]="'Professores'">
+        <div class="grid-container">
+            <div class="grid-item itemA1A2">
+                <h2>PROFESSORES</h2>
+            </div>
+            <div class="grid-item itemB1 sub-grid">
+                <app-people-profilepicset [enable]="edit_mode" [info]="professor_info"/>
+            </div>
+            <div class="grid-item itemC1 sub-grid">
+                <app-people-profileclasses [list]="classes_list"/>
+            </div>
+            <div class="grid-item itemB2C2 sub-grid">
+                <app-people-details [enable]="edit_mode" [unique_info]="'Senha'" [info]="professor_info"/>
+            </div>
+            @if ( !edit_mode ) {
+                <div class="grid-item itemD1D2">
+                    <button class="button-style button-orange" type="submit" (click)="toggleEditMode()">Editar</button>
+                </div>
+            } @else {
+                <div class="grid-item itemD1D2">
+                    <button class="button-style button-orange" type="submit" (click)="saveButton()">Salvar</button>
+                    <button class="button-style" type="submit" (click)="cancelButton()">Cancelar</button>
+                </div>
+            }
+        </div>
+    </app-sidebar>
+</div>

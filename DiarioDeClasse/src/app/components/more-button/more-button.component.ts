@@ -4,7 +4,7 @@ import { Component, ElementRef, HostListener } from '@angular/core';
 @Component({
   selector: 'app-more-button',
   standalone: true,
-  imports: [ NgStyle ],
+  imports: [],
   templateUrl: './more-button.component.html',
   styleUrl: './more-button.component.scss'
 })

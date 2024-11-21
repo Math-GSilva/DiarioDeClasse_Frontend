@@ -1,0 +1,101 @@
+@import url("../../app.component.scss");
+
+/* * * * * * * * *\
+    Grid  Start
+\* * * * * * * * */
+
+.grid-container {
+    display: grid;
+    gap: 0.4vh;
+    margin: auto;
+    width: 88%;
+    height: 33vh;
+    grid-template-columns: 99.6%;
+    grid-template-rows: 20% 15% auto;
+}
+  
+.grid-item {
+    padding: 0vh;
+}
+
+.sub-grid{
+    border-style: solid;
+    border-width: thin;
+    border-color: #DDE1E6;
+}
+
+//Título
+.itemA1 {
+    padding-top: 2vh;
+    grid-column: 1;
+    grid-row: 1;
+}
+//Filtro
+.itemB1 {
+    grid-column: 1;
+    grid-row: 2;
+}
+//Lista
+.itemC1 {
+    grid-column: 1;
+    grid-row: 3;
+
+    overflow-y:auto;
+}
+
+/* * * * * * * * *\
+     Grid  End
+\* * * * * * * * */
+
+.classes-text{ 
+    margin: 0;
+    margin-top: 0.25vh;
+    font-size: 2.5vh;
+
+    user-select: none;
+}
+
+.classes-name{
+    color: #21272A;
+    margin-left: 0.6vw;
+}
+
+.classes-number{
+    color: #697077;
+    margin-left: auto;
+    margin-right: 0.6vw;
+}
+
+.list-item{
+    height: 4vh;
+    margin-bottom: 0.5vh;
+    border-radius: 0.5vh;
+
+    &:hover{
+        cursor: pointer;
+        background-color: #eef0f3;
+    }
+
+    &:active{
+        background-color: #ccd0d6;
+    }
+}
+
+.classes-input{
+    width: calc( 98% - 0.6vw );
+    height: 4vh;
+
+    font-size: 2vh;
+    color: #21272A;
+
+    padding-left: 0.6vw;
+    background-color: #F2F4F8;
+
+    border-style: solid;
+    border-color: #C1C7CD;
+    outline: none;
+
+    &::placeholder{
+        font-style: italic;
+    }
+}

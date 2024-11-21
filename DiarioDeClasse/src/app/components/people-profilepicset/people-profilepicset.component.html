@@ -1,0 +1,22 @@
+<div class="grid-container">
+    <div class="grid-item itemA1A2">
+        <h3>Foto de Perfil</h3>
+    </div>
+    <div class="grid-item itemB1C1">
+        <div class="flex-div">
+            <img class="profile-image" src="../../../assets/profiles/{{ info.image }}.png">
+        </div>
+    </div>
+    @if ( enable ) {
+        <div class="grid-item itemB2">
+            <div class="flex-div">
+                <button class="upload-button">Upload</button>
+            </div>
+        </div>
+        <div class="grid-item itemC2">
+            <div class="flex-div">
+                <button class="remove-button">Remover</button>
+            </div>
+        </div> 
+    }
+</div>
