@@ -27,7 +27,22 @@ export class TeachersPageListComponent {
     return list;
   }
 
-  reloadProfessores(){
-    this.professores_list = this.generateList();
+  onNextPage() {
+    if (this.current_page < this.total_pages) {
+      this.current_page++;
+      console.log('Navigated to next page:', this.current_page);
+    }
+  }
+
+  onPreviousPage() {
+    if (this.current_page > 1) {
+      this.current_page--;
+      console.log('Navigated to previous page:', this.current_page);
+    }
+  }
+
+  onSelectPage(pageNumber: number) {
+    this.current_page = pageNumber;
+    console.log('Enter key pressed. Current page set to:', this.current_page);
   }
 }

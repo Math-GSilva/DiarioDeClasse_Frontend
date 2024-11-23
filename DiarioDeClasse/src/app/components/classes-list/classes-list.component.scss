@@ -1,0 +1,68 @@
+.list-card{
+    padding: 1vw;
+    padding-bottom: 0;
+    padding-top: 0;
+    background-color: #DDE1E6;
+}
+
+.row-overflow{
+    overflow-x: hidden;
+}
+
+.list-title{
+    position: sticky;
+    background-color: #DDE1E6;
+    top: 0;
+    padding-top: 1.2vh;
+    padding-bottom: 1vh;
+    font-size: 2.4vh;
+    font-weight: 500;
+    margin: 0;
+    height: 3.4vh;
+}
+
+.list-bottom-spacer{
+    position: sticky;
+    bottom: 0;
+    width: 100%;
+    height: 2vh;
+    background-color: #DDE1E6;
+}
+
+.list-item-card{
+    padding: 0.5vw;
+    background-color: #FFFFFF;
+}
+
+.spaced-listable{
+    margin-top: 2vh;
+}
+
+.listable-image{
+    height: 3.5vh;
+
+    margin-right: -1.5vh;
+
+    border-width: 0.4vh;
+    border-radius: 50%;
+    border-style: solid;
+    border-color: #DDE1E6;
+}
+
+.item-text{
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.item-top-text{
+    font-size: 2vh;
+}
+
+.row-right{
+    margin-left: auto;
+}
+
+.item-bottom-text{
+    font-size: 2.5vh;
+    margin-bottom: 0.5vh;
+}

@@ -1,0 +1,109 @@
+@import url("../../../app.component.scss");
+
+/* * * * * * * * *\
+    Grid  Start
+\* * * * * * * * */
+
+.grid-container {
+    display: grid;
+    gap: 3.5vh;
+    margin: auto;
+    width: 95%;
+    height: 85%;
+    grid-template-columns: 60% 36%;
+    grid-template-rows: 9% auto;
+}
+  
+.grid-item {
+    padding: 0vh;
+}
+
+//Título
+.itemA1 {
+    grid-column: 1;
+    grid-row: 1;
+}
+//Pesquisa
+.itemA2 {
+    grid-column: 2;
+    grid-row: 1;
+}
+//Resultado
+.itemB1B2 {
+    margin-top: 3vh;
+    grid-column: 1 / span 2;
+    grid-row: 2;
+}
+.itemC1C2 {
+    grid-column: 1 / span 2;
+    grid-row: 3;
+}
+
+/* * * * * * * * *\
+     Grid  End
+\* * * * * * * * */
+
+.button-style {
+    width: 10vw;
+    float: right;
+    margin-top: 1vh;
+    margin-left: 1vw;
+    padding-left: 0;
+    padding-right: 0;
+    font-size: 2.3vh;
+}
+
+.button-orange {
+    background-color: #EF8354;
+
+    &:hover {
+        background-color: #df6b39;
+    }
+    
+    &:active {
+        background-color: #ff9e74;
+    }
+}
+
+.period-card{
+    padding: 1vw;
+
+    background-color: #DDE1E6;
+}
+
+.period-title{
+    position: sticky;
+    background-color: #DDE1E6;
+    top: 0;
+    padding-top: 1.2vh;
+    padding-bottom: 1vh;
+    font-size: 2.4vh;
+    font-weight: 500;
+    margin: 0;
+    height: 3.4vh;
+}
+
+.class-card{
+    height: 50vh;
+    padding: 0.5vw;
+    background-color: #FFFFFF;
+    overflow-y: auto;
+}
+
+.class-text{
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.class-top-text{
+    font-size: 2vh;
+}
+
+.row-right{
+    margin-left: auto;
+}
+
+.class-bottom-text{
+    font-size: 2.5vh;
+    margin-bottom: 0.5vh;
+}

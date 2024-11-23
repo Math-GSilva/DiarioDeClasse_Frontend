@@ -1,0 +1,30 @@
+<div class="flex-column">
+    <div class="header-row flex-row">
+        <div class="column-1"><p class="header-text">Nome</p></div>
+        <div class="column-2"><p class="header-text">Email</p></div>
+        <div class="column-3"><p class="header-text">Data Nasc.</p></div>
+        <div class="column-4"><p class="header-text">{{ unique_info }}</p></div>
+    </div>
+    <div class="list-style">
+        @for (listable of listables; track $index){
+            <div class="listable-row-style flex-row">
+                <div class="column-1 flex-row">
+                    <img class="listable-image" src="../../../assets/profiles/{{ listable.image }}.png">
+                    <p class="listable-text">{{ listable.name }}</p>
+                </div>
+                <div class="column-2"><p class="listable-text">{{ listable.email }}</p></div>
+                <div class="column-3"><p class="listable-text">{{ listable.birthdate | date: 'dd/MM/yyyy' }}</p></div>
+                <div class="column-4">
+                    <p class="listable-text special-text">{{ listable.registry }}</p>
+                </div>
+                <div class="column-5">
+                    @if ( enable ){
+                        <button class="remove-button-style" (click)="remove()">
+                            <i class="remove-icon material-symbols-outlined">remove</i>
+                        </button>
+                    }
+                </div>
+            </div>
+        }
+    </div>
+</div>

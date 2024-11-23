@@ -1,0 +1,24 @@
+<div class="flex-column list-card">
+    <p class="list-title">{{ periodo }}</p>
+
+    @for ( listable of classListables; track $index ) {
+        <div class="flex-column list-item-card" [class]="{'spaced-listable': $index != 0}">
+            <div class="flex-row list-item">
+                <p class="item-top-text item-text">{{ listable.code }}</p>
+                <p class="item-top-text row-right item-text">{{ listable.teacher }}</p>
+            </div>
+            <div class="flex-row list-item">
+                <p class="item-bottom-text item-text">{{ listable.name }}</p>
+            </div>
+            <div class="flex-row list-item row-overflow">
+                <div class="flex-row">
+                    @for ( student of listable.students.slice(0, 13); track $index ) {
+                        <img class="listable-image" src="../../../assets/profiles/{{ student }}.png">
+                    }
+                </div>
+                <app-more-button class="row-right"/>
+            </div>
+        </div>
+    }    
+    <div class="list-bottom-spacer"></div>
+</div>

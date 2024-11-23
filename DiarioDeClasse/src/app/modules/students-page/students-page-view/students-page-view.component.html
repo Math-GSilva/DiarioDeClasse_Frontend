@@ -13,16 +13,18 @@
             <div class="grid-item itemB2C2 sub-grid">
                 <app-people-details [enable]="edit_mode" [unique_info]="'Matricula'" [info]="professor_info" [hide_password]="false"/>
             </div>
+            <div class="grid-item itemD1D2">
             @if ( !edit_mode ) {
-                <div class="grid-item itemD1D2">
+
                     <button class="button-style button-orange" type="submit" (click)="toggleEditMode()">Editar</button>
-                </div>
+
             } @else {
-                <div class="grid-item itemD1D2">
+
                     <button class="button-style button-orange" type="submit" (click)="saveButton()">Salvar</button>
                     <button class="button-style" type="submit" (click)="cancelButton()">Cancelar</button>
-                </div>
+
             }
+            </div>
         </div>
     </app-sidebar>
 </div>

@@ -13,6 +13,8 @@ export const routes: Routes = [
     loadChildren: () => import('./modules/home-page/home-page.module').then(m => m.HomePageModule)},
     {'path': 'teachers', 
     loadChildren: () => import('./modules/teachers-page/teachers-page.module').then(m => m.TeachersPageModule)},
+    {'path': 'classes', 
+    loadChildren: () => import('./modules/classes-page/classes-page.module').then(m => m.ClassesPageModule)},
     {'path': 'students', 
     loadChildren: () => import('./modules/students-page/students-page.module').then(m => m.StudentsPageModule)},
     {'path': '', redirectTo: 'login', pathMatch: 'full'},

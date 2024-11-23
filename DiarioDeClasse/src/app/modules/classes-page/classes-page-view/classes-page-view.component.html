@@ -1,0 +1,38 @@
+<div class="full-card">
+    <app-sidebar [activeButton]="'Turmas'">
+        <div class="grid-container">
+            <div class="grid-item itemA1">
+                <h2>TURMAS</h2>
+            </div>
+            <div class="grid-item itemA2">
+                <app-category-search/>
+            </div>
+            <div class="grid-item itemB1B2">
+                <!-- Card Cinza -->
+                <div class="flex-column period-card">
+                    <p class="period-title">{{ class_info.period }}</p>
+                    <!-- Card branco -->
+                    <div class="flex-column class-card">
+                        <div class="flex-row class-item">
+                            <p class="class-top-text class-text">{{ class_info.code }}</p>
+                            <p class="class-top-text row-right class-text">{{ class_info.teacher }}</p>
+                        </div>
+                        <div class="flex-row class-item">
+                            <p class="class-bottom-text class-text">{{ class_info.name }}</p>
+                        </div>
+                        <!-- Lista de Alunos -->
+                        <app-students-minilist [enable]="edit_mode" [unique_info]="'Matrícula'" [listables]="class_info.students"/>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-item itemC1C2">
+                @if ( !edit_mode ) {
+                    <button class="button-style button-orange" type="submit" (click)="toggleEditMode()">Editar</button>
+                } @else {
+                    <button class="button-style button-orange" type="submit" (click)="saveButton()">Salvar</button>
+                    <button class="button-style" type="submit" (click)="cancelButton()">Cancelar</button>
+                }
+            </div>
+        </div>
+    </app-sidebar>
+</div>
