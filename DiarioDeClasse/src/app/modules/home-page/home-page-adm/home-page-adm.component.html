@@ -5,13 +5,13 @@
                 <h2>DASHBOARD</h2>
             </div>
             <div class="grid-item itemB1">
-                <app-dashboard-list titleText="Professores" [listables]="profes_list"/>
+                <app-dashboard-list titleText="Professores" [listables]="profes_list" (pageChangeMore)="goToPage('/teachers')" (pageChangeView)="goToPage('/teachers/view')"/>
             </div>
             <div class="grid-item itemB2">
-                <app-dashboard-list titleText="Turmas" [listables]="turmas_list"/>
+                <app-dashboard-list titleText="Turmas" [listables]="turmas_list" (pageChangeMore)="goToPage('/classes')" (pageChangeView)="goToPage('/classes/view')"/>
             </div>
             <div class="grid-item itemC1C2">
-                <app-dashboard-list titleText="Alunos" [listables]="alunos_list"/>
+                <app-dashboard-list titleText="Alunos" [listables]="alunos_list" (pageChangeMore)="goToPage('/students')" (pageChangeView)="goToPage('/students/view')"/>
             </div>
         </div>
     </app-sidebar>

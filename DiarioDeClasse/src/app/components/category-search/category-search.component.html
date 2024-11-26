@@ -7,7 +7,9 @@
             <input class="input-style" type="search" formControlName="Search" placeholder="Search for...">
         </form>
     </div>
-    <button class="add-style">
-        <i class="add-icon material-symbols-outlined">add</i>
-    </button>
+    @if ( doAdd ){
+        <button class="add-style">
+            <i class="add-icon material-symbols-outlined" (click)="addClicked()">add</i>
+        </button>
+    }
 </div>

@@ -4,7 +4,7 @@
             <h2>TURMA {{ class_info.code }}</h2>
         </div>
         <div class="grid-item itemA2">
-            <app-category-search/>
+            <app-category-search [doAdd]="false"/>
         </div>
         <div class="grid-item itemB1B2">
             <!-- Card Cinza -->
@@ -16,11 +16,11 @@
                         <p class="class-bottom-text class-text">{{ class_info.name }}</p>
                     </div>
                     <!-- Lista de Alunos -->
-                    <app-students-minilist [enable]="false" [unique_info]="'Matrícula'" [listables]="class_info.students"/>
+                    <app-students-minilist [enable]="false" [unique_info]="'Matrícula'" [listables]="class_info.students" (pageChangeStudent)="goToPage('/students/user')"/>
                 </div>
                 <div class="buttons-div">
-                    <button class="button-style button-orange" type="submit">Registro de Presença</button>
-                    <button class="button-style button-orange" type="submit">Quadro de Notas</button>
+                    <button class="button-style button-orange" (click)="goToPage('/register/presence')">Registro de Presença</button>
+                    <button class="button-style button-orange" (click)="goToPage('/register/grades')">Quadro de Notas</button>
                 </div>
             </div>
         </div>

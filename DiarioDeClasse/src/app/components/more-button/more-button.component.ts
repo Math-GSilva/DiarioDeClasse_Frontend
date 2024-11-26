@@ -1,5 +1,5 @@
 import { NgStyle } from '@angular/common';
-import { Component, ElementRef, HostListener } from '@angular/core';
+import { Component, ElementRef, EventEmitter, HostListener, Output } from '@angular/core';
 
 @Component({
   selector: 'app-more-button',
@@ -9,6 +9,7 @@ import { Component, ElementRef, HostListener } from '@angular/core';
   styleUrl: './more-button.component.scss'
 })
 export class MoreButtonComponent {
+  @Output() pageChangeOpen: EventEmitter<void> = new EventEmitter<void>();
   show_more = false;
 
   constructor(private eRef: ElementRef) {}
@@ -26,5 +27,9 @@ export class MoreButtonComponent {
     if (!this.eRef.nativeElement.contains(event.target)) {
       this.show_more = false;
     }
+  }
+
+  openClicked(){
+    this.pageChangeOpen.emit();
   }
 }

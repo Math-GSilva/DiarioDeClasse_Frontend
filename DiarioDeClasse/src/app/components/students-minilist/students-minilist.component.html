@@ -7,7 +7,7 @@
     </div>
     <div class="list-style">
         @for (listable of listables; track $index){
-            <div class="listable-row-style flex-row">
+            <div class="listable-row-style flex-row" (click)="studentClicked()">
                 <div class="column-1 flex-row">
                     <img class="listable-image" src="../../../assets/profiles/{{ listable.image }}.png">
                     <p class="listable-text">{{ listable.name }}</p>

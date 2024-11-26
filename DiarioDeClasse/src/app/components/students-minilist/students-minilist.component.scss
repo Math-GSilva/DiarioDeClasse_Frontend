@@ -32,6 +32,17 @@
     border-style: solid;
     border-top-style: none;
     border-color: #DDE1E6;
+
+    transition: 0.2s;
+
+    &:hover{
+        cursor: pointer;
+        background-color: #DDE1E6;
+    }
+
+    &:active{
+        background-color: #F2F4F8;
+    }
 }
 
 .listable-button-style{
@@ -50,6 +61,8 @@
     
     font-size: 1.8vh;
     text-align: left;
+
+    user-select: none;
 }
 
 .special-text{

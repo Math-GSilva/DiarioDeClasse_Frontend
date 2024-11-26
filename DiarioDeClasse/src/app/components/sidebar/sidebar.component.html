@@ -16,10 +16,10 @@
         </form>
         <!-- Botões -->
         <div class="page-buttons">
-            <app-sidebar-button buttonText="Dashboard"   buttonIcon="home"         [backgroundColor]="isActive('Dashboard')   ? '#F2F4F8' : '#FFFFFF'"/>
-            <app-sidebar-button buttonText="Professores" buttonIcon="folder_copy"  [backgroundColor]="isActive('Professores') ? '#F2F4F8' : '#FFFFFF'"/>
-            <app-sidebar-button buttonText="Turmas"      buttonIcon="bookmarks"    [backgroundColor]="isActive('Turmas')      ? '#F2F4F8' : '#FFFFFF'"/>
-            <app-sidebar-button buttonText="Alunos"      buttonIcon="group"        [backgroundColor]="isActive('Alunos')      ? '#F2F4F8' : '#FFFFFF'"/>
+            <app-sidebar-button buttonText="Dashboard"   buttonIcon="home"         [backgroundColor]="isActive('Dashboard')   ? '#F2F4F8' : '#FFFFFF'" (click)="goToPage('/home/admin')"/>
+            <app-sidebar-button buttonText="Professores" buttonIcon="folder_copy"  [backgroundColor]="isActive('Professores') ? '#F2F4F8' : '#FFFFFF'" (click)="goToPage('/teachers')"/>
+            <app-sidebar-button buttonText="Turmas"      buttonIcon="bookmarks"    [backgroundColor]="isActive('Turmas')      ? '#F2F4F8' : '#FFFFFF'" (click)="goToPage('/classes')"/>
+            <app-sidebar-button buttonText="Alunos"      buttonIcon="group"        [backgroundColor]="isActive('Alunos')      ? '#F2F4F8' : '#FFFFFF'" (click)="goToPage('/students')"/>
         </div>
     </div>
     <div class="grid-item itemA2">

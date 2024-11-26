@@ -2,7 +2,7 @@
     <p class="list-title">{{ periodo }}</p>
 
     @for ( listable of classListables; track $index ) {
-        <div class="flex-column list-item-card" [class]="{'spaced-listable': $index != 0}">
+        <div class="flex-column list-item-card" [class]="{'spaced-listable': $index != 0}" (click)="classClicked()">
             <div class="flex-row list-item">
                 <p class="item-top-text item-text">{{ listable.code }}</p>
                 <p class="item-top-text row-right item-text">{{ listable.teacher }}</p>

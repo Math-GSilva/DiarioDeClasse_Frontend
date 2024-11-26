@@ -5,10 +5,10 @@
                 <h2>ALUNOS</h2>
             </div>
             <div class="grid-item itemA2">
-                <app-category-search/>
+                <app-category-search (pageChangeAdd)="goToPage('/students/view')"/>
             </div>
             <div class="grid-item itemB1B2">
-                <app-people-list [unique_info]="'Matrícula'" [listables]="alunos_list"/>
+                <app-people-list [unique_info]="'Matrícula'" [listables]="alunos_list" (pageChangePerson)="goToPage('/students/view')"/>
             </div>
             <div class="grid-item itemC1C2">
                 <app-page-select [last_page]="total_pages" [current_page]="current_page" (nextPage)="onNextPage()" (previousPage)="onPreviousPage()" (selectPage)="onSelectPage($event)"/>

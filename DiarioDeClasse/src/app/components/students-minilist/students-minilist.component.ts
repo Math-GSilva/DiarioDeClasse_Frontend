@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { MoreButtonComponent } from "../more-button/more-button.component";
 import { StudentsListable } from '../../interfaces/students-listable';
@@ -14,8 +14,13 @@ export class StudentsMinilistComponent {
   @Input() enable: boolean = false;
   @Input() unique_info: string = 'undefined';
   @Input() listables: StudentsListable[] = [];
+  @Output() pageChangeStudent: EventEmitter<void> = new EventEmitter<void>();
 
   remove(){
 
+  }
+
+  studentClicked(){
+    this.pageChangeStudent.emit();
   }
 }

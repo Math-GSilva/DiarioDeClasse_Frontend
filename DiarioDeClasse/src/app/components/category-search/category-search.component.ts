@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 
 @Component({
   selector: 'app-category-search',
@@ -8,5 +8,12 @@ import { Component } from '@angular/core';
   styleUrl: './category-search.component.scss'
 })
 export class CategorySearchComponent {
-  onSubmit(){}
+  @Input() doAdd: boolean = true;
+  @Output() pageChangeAdd: EventEmitter<void> = new EventEmitter<void>();
+
+  onSubmit(): void{}
+
+  addClicked(){
+    this.pageChangeAdd.emit();
+  }
 }

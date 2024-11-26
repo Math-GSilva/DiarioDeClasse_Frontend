@@ -1,13 +1,13 @@
 <div class="dashboard-list-card">
     <div class="flex-row">
         <p class="dashboard-list-title">{{ titleText }}</p>
-        <button class="dashboard-list-showall">
+        <button class="dashboard-list-showall" (click)="pageMoreClicked()">
             <p>Mostrar Todos</p>
         </button>
     </div>
     <div class="flex-column">
         @for ( listable of displayListables; track $index ){
-            <button class="dashboard-list-listable">
+            <button class="dashboard-list-listable" (click)="pageViewClicked()">
                 <p class="listable-text">⬤ {{ listable.display }}</p>
             </button>
         }

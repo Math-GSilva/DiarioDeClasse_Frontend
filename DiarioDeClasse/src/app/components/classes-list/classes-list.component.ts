@@ -1,6 +1,4 @@
-import { Component, Input } from '@angular/core';
-import { MoreButtonComponent } from "../more-button/more-button.component";
-
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 @Component({
   selector: 'app-classes-list',
   standalone: true,
@@ -11,4 +9,9 @@ import { MoreButtonComponent } from "../more-button/more-button.component";
 export class ClassesListComponent {
   @Input() periodo: string = 'Período';
   @Input() classListables: any[] = [];
+  @Output() goToClass: EventEmitter<void> = new EventEmitter<void>();
+
+  classClicked(){
+    this.goToClass.emit();
+  }
 }

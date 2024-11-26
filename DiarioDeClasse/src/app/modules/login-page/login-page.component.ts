@@ -28,7 +28,8 @@ export class LoginPageComponent {
       this.authService.login(this.loginForm.value)
       .subscribe((data: any) => {
         if(this.authService.isLoggedIn()){
-          this.router.navigate(['/home']);
+          this.router.navigate(['/home/user']);
+          //this.router.navigate(['/home']);
         }
         console.log(data);
       });
