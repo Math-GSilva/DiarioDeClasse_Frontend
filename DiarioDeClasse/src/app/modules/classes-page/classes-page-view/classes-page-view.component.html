@@ -18,7 +18,7 @@
                             <p class="class-bottom-text class-text">{{ class_info.name }}</p>
                         </div>
                         <!-- Lista de Alunos -->
-                        <app-students-minilist [enable]="edit_mode" [unique_info]="'Matrícula'" [listables]="class_info.students"/>
+                        <app-students-minilist [enable]="edit_mode" [unique_info]="'Matrícula'" [listables]="class_info.students" (pageChangeStudent)="goToPage('/students/view')"/>
                     </div>
                 </div>
             </div>

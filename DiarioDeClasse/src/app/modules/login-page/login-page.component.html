@@ -16,7 +16,7 @@
             <div class="grid-item itemC1">
                 <label>Senha: </label><br>
                 <div class="input-wrapper">   
-                    <button class="toggle-button" (click)="toggleShowPassword()">
+                    <button class="toggle-button" type="button" (click)="toggleShowPassword()">
                         <i class="toggle-button-icon material-symbols-outlined">{{ hide_password ? 'visibility' : 'visibility_off' }}</i>
                     </button>
                     <input class="input-style" [type]="hide_password ? 'password' : 'text'" formControlName="Password" [placeholder]="hide_password ? '●●●●●●●●●●●' : 'my_password'">

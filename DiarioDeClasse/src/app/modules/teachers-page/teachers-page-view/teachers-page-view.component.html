@@ -8,7 +8,7 @@
                 <app-people-profilepicset [enable]="edit_mode" [info]="professor_info"/>
             </div>
             <div class="grid-item itemC1 sub-grid">
-                <app-people-profileclasses [list]="classes_list"/>
+                <app-people-profileclasses [list]="classes_list" (pageChangeClass)="goToPage('/classes/view')"/>
             </div>
             <div class="grid-item itemB2C2 sub-grid">
                 <app-people-details [enable]="edit_mode" [unique_info]="'Senha'" [info]="professor_info"/>

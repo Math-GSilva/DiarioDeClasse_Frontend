@@ -7,7 +7,7 @@
     </div>
     <div class="grid-item itemC1">
         @for ( lsitable of list; track $index ) {
-            <div class="flex-row list-item">
+            <div class="flex-row list-item" (click)="classClicked()">
                 <p class="classes-text classes-name">{{ lsitable.name }}</p>
                 <p class="classes-text classes-number">{{ lsitable.number }}</p>
             </div>

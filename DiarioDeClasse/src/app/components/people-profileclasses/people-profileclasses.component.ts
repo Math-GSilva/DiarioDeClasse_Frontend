@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { SimpleClasses } from '../../interfaces/simple-classes';
 
 @Component({
@@ -9,5 +9,10 @@ import { SimpleClasses } from '../../interfaces/simple-classes';
   styleUrl: './people-profileclasses.component.scss'
 })
 export class PeopleProfileclassesComponent {
+  @Output() pageChangeClass: EventEmitter<void> = new EventEmitter<void>();
   @Input() list: any[] = [];
+
+  classClicked(){
+    this.pageChangeClass.emit();
+  }
 }

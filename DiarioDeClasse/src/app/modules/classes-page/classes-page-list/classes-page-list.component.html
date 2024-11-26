@@ -13,10 +13,10 @@
                         <app-classes-list [periodo]="'Manhã'" [classListables]="class_list" (goToClass)="goToPage('/classes/view')"/>
                     </div>
                     <div class="grid-item2 itemA2-2">
-                        <app-classes-list [periodo]="'Tarde'" [classListables]="class_list"/>
+                        <app-classes-list [periodo]="'Tarde'" [classListables]="class_list" (goToClass)="goToPage('/classes/view')"/>
                     </div>
                     <div class="grid-item2 itemA3-2">
-                        <app-classes-list [periodo]="'Noite'" [classListables]="class_list"/>
+                        <app-classes-list [periodo]="'Noite'" [classListables]="class_list" (goToClass)="goToPage('/classes/view')"/>
                     </div>
                 </div>
             </div>

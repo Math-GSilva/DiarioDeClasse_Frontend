@@ -8,14 +8,13 @@
                 <app-people-profilepicset [enable]="edit_mode" [info]="student_info"/>
             </div>
             <div class="grid-item itemC1 sub-grid">
-                <app-people-profileclasses [list]="classes_list"/>
+                <app-people-profileclasses [list]="classes_list" (pageChangeClass)="goToPage('/classes/view')"/>
             </div>
             <div class="grid-item itemB2C2 sub-grid">
                 <app-people-details [enable]="edit_mode" [unique_info]="'Matricula'" [info]="student_info" [hide_password]="false"/>
             </div>
             <div class="grid-item itemD1D2">
             @if ( !edit_mode ) {
-
                     <button class="button-style button-orange" type="submit" (click)="toggleEditMode()">Editar</button>
 
             } @else {
