@@ -12,11 +12,10 @@
             </div>
             <div class="flex-row list-item row-overflow">
                 <div class="flex-row">
-                    @for ( student of listable.students.slice(0, 13); track $index ) {
+                    @for ( student of listable.students.slice(0, 15); track $index ) {
                         <img class="listable-image" src="../../../assets/profiles/{{ student }}.png">
                     }
                 </div>
-                <app-more-button class="row-right"/>
             </div>
         </div>
     }    

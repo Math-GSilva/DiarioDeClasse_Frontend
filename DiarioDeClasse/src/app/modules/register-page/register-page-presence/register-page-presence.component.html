@@ -1,0 +1,21 @@
+<div class="full-card">
+    <div class="grid-container">
+        <div class="grid-item itemA1">
+            <h2>REGISTRO DE PRESENÇA</h2>
+        </div>
+        <div class="grid-item itemA2">
+            <input type="date" class="date-style">
+        </div>
+        <div class="grid-item itemB1B2">
+            <app-students-presence [enable]="edit_mode" [unique_info]="'Matrícula'" [listables]="class_info"/>
+        </div>
+        <div class="grid-item itemC1C2">
+            @if ( !edit_mode ) {
+                <button class="button-style button-orange" type="submit" (click)="toggleEditMode()">Editar</button>
+            } @else {
+                <button class="button-style button-orange" type="submit" (click)="saveButton()">Salvar</button>
+                <button class="button-style" type="submit" (click)="cancelButton()">Cancelar</button>
+            }
+        </div>
+    </div>
+</div>

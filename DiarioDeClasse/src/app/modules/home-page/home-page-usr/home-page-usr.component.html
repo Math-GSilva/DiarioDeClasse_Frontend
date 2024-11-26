@@ -1,1 +1,23 @@
-<p>home-page-usr works!</p>
+<div class="full-card">
+    <div class="grid-container">
+        <div class="grid-item itemA1">
+            <h2>MINHAS TURMAS</h2>
+        </div>
+        <div class="grid-item itemA2">
+            <app-category-search/>
+        </div>
+        <div class="grid-item itemB1B2">
+            <div class="grid-container2">
+                <div class="grid-item2 itemA1-2">
+                    <app-classes-list [periodo]="'Manhã'" [classListables]="class_list"/>
+                </div>
+                <div class="grid-item2 itemA2-2">
+                    <app-classes-list [periodo]="'Tarde'" [classListables]="class_list"/>
+                </div>
+                <div class="grid-item2 itemA3-2">
+                    <app-classes-list [periodo]="'Noite'" [classListables]="class_list"/>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

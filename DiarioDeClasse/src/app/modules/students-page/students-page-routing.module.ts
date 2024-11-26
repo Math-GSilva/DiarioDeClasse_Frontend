@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { StudentsPageListComponent } from './students-page-list/students-page-list.component';
 import { StudentsPageViewComponent } from './students-page-view/students-page-view.component';
+import { StudentsPageUsrComponent } from './students-page-usr/students-page-usr.component';
 
 const routes: Routes = [
   {
@@ -9,6 +10,9 @@ const routes: Routes = [
   },
   {
     path: 'view', component: StudentsPageViewComponent,
+  },
+  {
+    path: 'user', component: StudentsPageUsrComponent,
   }
 ];
 

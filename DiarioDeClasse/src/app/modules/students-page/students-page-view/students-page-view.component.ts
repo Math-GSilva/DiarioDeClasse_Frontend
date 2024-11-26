@@ -14,7 +14,7 @@ import { MOCK_SIMPLE_CLASSES } from '../../../interfaces/mocks/mock-simple-class
   styleUrl: './students-page-view.component.scss'
 })
 export class StudentsPageViewComponent {
-  professor_info = MOCK_STUDENTS_INFO;
+  student_info = MOCK_STUDENTS_INFO;
   classes_list = this.generateClassList();
 
   edit_mode = false;

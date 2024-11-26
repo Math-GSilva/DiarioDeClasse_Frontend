@@ -1,0 +1,32 @@
+<div class="flex-column total">
+    <div class="header-row flex-row">
+        <div class="column-1"><p class="header-text">Nome</p></div>
+        <div class="column-2"><p class="header-text">N1</p></div>
+        <div class="column-3"><p class="header-text">N2</p></div>
+        <div class="column-4"><p class="header-text">N3</p></div>
+        <div class="column-5"><p class="header-text">Média</p></div>
+        <div class="column-6"><p class="header-text">Situação</p></div>
+    </div>
+    <div class="list-style" [style.height]="height">
+        @for (listable of listables; track $index){
+            <div class="listable-row-style flex-row">
+                <div class="column-1 flex-row">
+                    @if ( do_image ){
+                        <img class="listable-image" src="../../../assets/profiles/{{ listable.image }}.png">
+                    }
+                    <p class="listable-text">{{ listable.name }}</p>
+                </div>
+                <div class="column-2"><input value="{{ listable.N1 }}" class="grade-input" maxlength="2" [disabled]="!enable"></div>
+                <div class="column-3"><input value="{{ listable.N2 }}" class="grade-input" maxlength="2" [disabled]="!enable"></div>
+                <div class="column-4"><input value="{{ listable.N3 }}" class="grade-input" maxlength="2" [disabled]="!enable"></div>
+                <!-- <div class="column-2"><p class="listable-text">{{ listable.N1 }}</p></div> -->
+                <!-- <div class="column-3"><p class="listable-text">{{ listable.N2 }}</p></div> -->
+                <!-- <div class="column-4"><p class="listable-text">{{ listable.N3 }}</p></div> -->
+                <div class="column-5"><p class="listable-text">{{ auto_average( listable.N1, listable.N2, listable.N3 ) }}</p></div>
+                <div class="column-6 flex-row">
+                    <p class="listable-text special-text">{{ listable.status }}</p>
+                </div>
+            </div>
+        }
+    </div>
+</div>

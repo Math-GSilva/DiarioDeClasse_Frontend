@@ -29,4 +29,34 @@ export class AuthService {
     }
     return false;
   }
+
+  async getRole(): Promise<string | null> {
+    const user = localStorage.getItem('authUser');
+    if (user) {
+      const token = JSON.parse(user).token;
+  
+      try {
+        const isAdmin = await this.httpClient
+          .post<boolean>(
+            `${this.baseUrl}/api/auth/IsAdmnistrador`,
+            {token}, // Pass the token directly
+            {
+              headers: {
+                'Content-Type': 'text/plain', // Ensure content-type is plain text
+              },
+              responseType: 'json', // Specify the expected response type
+            }
+          )
+          .toPromise();
+  
+        return isAdmin ? 'admin' : 'user';
+      } catch (error) {
+        console.error('Error determining role:', error);
+        return null;
+      }
+    }
+    return null;
+  }
+  
+  
 }

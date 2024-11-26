@@ -4,7 +4,7 @@ import { MoreButtonComponent } from "../more-button/more-button.component";
 @Component({
   selector: 'app-classes-list',
   standalone: true,
-  imports: [MoreButtonComponent],
+  imports: [],
   templateUrl: './classes-list.component.html',
   styleUrl: './classes-list.component.scss'
 })

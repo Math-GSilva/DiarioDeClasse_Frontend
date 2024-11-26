@@ -1,0 +1,29 @@
+<div class="flex-column total">
+    <div class="header-row flex-row">
+        <div class="column-1"><p class="header-text">Nome</p></div>
+        <div class="column-2"><p class="header-text">Faltas</p></div>
+        <div class="column-3"><p class="header-text">Justificadas</p></div>
+        <div class="column-4"><p class="header-text">Abonadas</p></div>
+        <div class="column-5"><p class="header-text">Total</p></div>
+        <div class="column-6"><p class="header-text">Situação</p></div>
+    </div>
+    <div class="list-style" [style.height]="height">
+        @for (listable of listables; track $index){
+            <div class="listable-row-style flex-row">
+                <div class="column-1 flex-row">
+                    @if ( do_image ){
+                        <img class="listable-image" src="../../../assets/profiles/{{ listable.image }}.png">
+                    }
+                    <p class="listable-text">{{ listable.name }}</p>
+                </div>
+                <div class="column-2"><input value="{{ listable.absences }}" class="grade-input" maxlength="2" [disabled]="!enable"></div>
+                <div class="column-3"><input value="{{ listable.justified }}" class="grade-input" maxlength="2" [disabled]="!enable"></div>
+                <div class="column-4"><input value="{{ listable.granted }}" class="grade-input" maxlength="2" [disabled]="!enable"></div>
+                <div class="column-5"><p class="listable-text">{{ auto_total( listable.absences, listable.justified, listable.granted ) }}</p></div>
+                <div class="column-6 flex-row">
+                    <p class="listable-text special-text">{{ auto_status( auto_total( listable.absences, listable.justified, listable.granted ), listable.classes ) }}%</p>
+                </div>
+            </div>
+        }
+    </div>
+</div>

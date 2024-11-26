@@ -1,13 +1,12 @@
 import { Component, Input } from '@angular/core';
 import { SidebarComponent } from "../../../components/sidebar/sidebar.component";
-import { CategorySearchComponent } from "../../../components/category-search/category-search.component";
 import { MOCK_CLASSES_INFO } from '../../../interfaces/mocks/mock-classes-info';
 import { StudentsMinilistComponent } from "../../../components/students-minilist/students-minilist.component";
 
 @Component({
   selector: 'app-classes-page-view',
   standalone: true,
-  imports: [SidebarComponent, CategorySearchComponent, StudentsMinilistComponent],
+  imports: [SidebarComponent, StudentsMinilistComponent],
   templateUrl: './classes-page-view.component.html',
   styleUrl: './classes-page-view.component.scss'
 })

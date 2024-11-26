@@ -1,0 +1,16 @@
+<div class="full-card">
+    <div class="grid-container">
+        <div class="grid-item itemA1A2">
+            <h2>ALUNO</h2>
+        </div>
+        <div class="grid-item itemB1B2 sub-grid">
+            <app-students-details [info]="student_info"/>
+        </div>
+        <div class="grid-item itemC1">
+            <app-students-grades [listables]="grades_info" [height]="'30vh'" [do_image]="false"/>
+        </div>
+        <div class="grid-item itemC2">
+            <app-students-absences [listables]="absences_info" [height]="'30vh'" [do_image]="false"/>
+        </div>
+    </div>
+</div>

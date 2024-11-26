@@ -1,0 +1,21 @@
+<div class="grid-container">
+    <div class="grid-item itemA1A2">
+        <h3>Detalhes de Usuário</h3>
+    </div>
+    <div class="grid-item itemB1 flex-column">
+        <label>Matricula</label>
+        <input class="input-style" type="text" [value]="info.registry" disabled>
+    </div>
+    <div class="grid-item itemB2 flex-column">
+        <label>Nome</label>
+        <input class="input-style" type="text" [value]="info.name" disabled>
+    </div>
+    <div class="grid-item itemC1 flex-column">
+        <label>Data Nasc.</label>
+        <input class="input-style" type="text" [value]="info.birthdate | date:'dd/MM/yyyy'" disabled>
+    </div>
+    <div class="grid-item itemC2 flex-column">
+        <label>E-mail</label>
+        <input class="input-style" type="text" [value]="info.email" disabled>
+    </div>
+</div>

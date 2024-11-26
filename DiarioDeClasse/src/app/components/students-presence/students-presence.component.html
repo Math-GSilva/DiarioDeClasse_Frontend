@@ -1,0 +1,39 @@
+<div class="flex-column">
+    <div class="header-row flex-row">
+        <div class="column-1"><p class="header-text">Nome</p></div>
+        <div class="column-2"><p class="header-text">Email</p></div>
+        <div class="column-3"><p class="header-text">Matrícula</p></div>
+        <div class="column-4"><p class="header-text">Presença</p></div>
+    </div>
+    <div class="list-style">
+        @for (listable of listables; track $index){
+            <div class="listable-row-style flex-row">
+                <div class="column-1 flex-row">
+                    <img class="listable-image" src="../../../assets/profiles/{{ listable.image }}.png">
+                    <p class="listable-text">{{ listable.name }}</p>
+                </div>
+                <div class="column-2"><p class="listable-text">{{ listable.email }}</p></div>
+                <div class="column-3">                    
+                    <p class="listable-text special-text">{{ listable.registry }}</p>
+                </div>
+                <div class="column-4">
+                    @if ( listable.presence ) {
+                        <p class="listable-text special-text special-green">PRESENTE</p>
+                    } @else {
+                        <p class="listable-text special-text special-red">AUSENTE</p>
+                    }
+                </div>
+                <div class="column-5 flex-row">
+                    @if ( enable ){
+                        <button class="any-button-style" (click)="markPresence()">
+                            <i class="any-icon presence-icon material-symbols-outlined">check</i>
+                        </button>
+                        <button class="any-button-style" (click)="markAbsence()">
+                            <i class="any-icon absence-icon material-symbols-outlined">remove</i>
+                        </button>
+                    }
+                </div>
+            </div>
+        }
+    </div>
+</div>
